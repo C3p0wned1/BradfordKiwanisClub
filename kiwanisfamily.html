@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Kiwanis Family</title>
+<link href="Kiwanis_styles.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript">
+	function updateClock()
+	{
+		var currentTime = new Date();
+		var currentHours = currentTime.getHours();
+		var currentMinutes = currentTime.getMinutes();
+		var currentSeconds = currentTime.getSeconds();
+		var timeOfDay = "";
+		
+		//determine timeOfDay:am or pm
+		timeOfDay = (currentHours < 12)?"AM":"PM";
+		//Convert an hour's value to "0" to "12"
+		currentHours = (currentHours > 12)?currentHours - 12:currentHours;
+		//Pad a leading zero for minutes less than 10
+		currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+		currentSeconds = (currentSeconds <10 ? "0" : "") + currentSeconds;
+		
+		currentTime = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+		
+		document.getElementById("Clock").firstChild.nodeValue = currentTime;
+	}
+</script>
+
+<style type="text/css">
+.auto-style1 {
+	border-width: 0px;
+}
+</style>
+
+</head>
+
+<body onload="updateClock(); setInterval('updateClock()', 1000)">
+
+<header>
+<h1><img src="KiwanisLogo.jpg" alt="Kiwanis Club Bradford Chapter"/></h1>
+
+</header>
+	<p>
+	<span class="displayClock">
+		Local Time: <span id="Clock">Clock</span>
+	</span>
+</p>
+<nav class="horizontal">
+	<ul>	
+		<li><a href="index.html">Home</a></li>
+		<li><a href="membership.html">Membership</a></li>
+		<li><a href="kiwanisprojects.html">Kiwanis Projects</a></li>
+		<li><a href="kiwanisfamily.html">Kiwanis Family</a></li>
+		<li><a href="committees.html">Committees</a></li>
+		<li><a href="contactus.html">Contact Us</a></li>	
+	</ul>
+</nav>
+<br/>
+
+<h2>Who is the Kiwanis Family?</h2>
+<br/>
+	<p>The Kiwanis family is a number of organizations aimed at improving the community. The Bradford area has an assortment of organizations from the Kiwanis family. Below you will find a short description about each organization in Bradford.  </p>
+<br/>
+<br/>
+<section>
+<div id="kiwanisinter">
+	<h3>Kiwanis International</h3>	
+<header><a href="http://sites.kiwanis.org/Kiwanis/en/home.aspx">
+	<img id="kfamilykiwanislogo" src="KiwanisLogoDemo.jpeg" class="auto-style1"/></a></header>
+<p>Kiwanis International is most-likely the first name you see when first introduced to Kiwanis.
+</p>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<div id="keyclub">
+	<h3>Kiwanis Key Club</h3>	
+<header><a href="http://www.keyclub.org/home.aspx">
+	<img id="kfamilykeyclublogo" src="KeyClubLogoDemo.jpeg" class="auto-style1"/></a></header>
+<p>Kiwanis Key Club helps high school students get involved in the community. In Key Club, students help Kiwanis fulfil the purpose of serving the children of the world.
+</p>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<div id="aktionclub">
+	<h3>Kiwanis Aktion Club</h3>	
+<header><a href="http://www.aktionclub.org/Home.aspx">
+	<img id="kfamilyaktionclublogo" src="AktionClubDemoLogo.jpeg" class="auto-style1"/></a></header>
+<p>Kiwanis Aktion Club strives to improve the lives of disabled adults. Aktion Club improves the lives of disabled adults by working with multiple other organizations such as the YMCA to hold events and programs.
+</p>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<div id="buildersclub">
+	<h3>Kiwanis Builders Club</h3>	
+<header><a href="http://www.buildersclub.org/home.aspx">
+	<img id="kfamilybuildersclublogo" src="BuildersClubDemoLogo.jpeg" class="auto-style1"/></a></header>
+<p>Kiwanis Builders Club helps junior high and middle school students get involved in the community by holding events and completing projects. Builders Club's mission is to build leaders out of our young students today.  
+</p>
+</br>
+</div>
+
+</section>
+</body>
+
+<footer>
+	<p>
+		&copy;Kiwanis Club of Bradford, PA All rights reserved. Website development by Josiah Bennett and Dominika Urban
+	</p>
+</footer>
+
+</html>

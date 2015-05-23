@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Kiwanis Projects</title>
+<link href="Kiwanis_styles.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript">
+	function updateClock()
+	{
+		var currentTime = new Date();
+		var currentHours = currentTime.getHours();
+		var currentMinutes = currentTime.getMinutes();
+		var currentSeconds = currentTime.getSeconds();
+		var timeOfDay = "";
+		
+		//determine timeOfDay:am or pm
+		timeOfDay = (currentHours < 12)?"AM":"PM";
+		//Convert an hour's value to "0" to "12"
+		currentHours = (currentHours > 12)?currentHours - 12:currentHours;
+		//Pad a leading zero for minutes less than 10
+		currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+		currentSeconds = (currentSeconds <10 ? "0" : "") + currentSeconds;
+		
+		currentTime = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+		
+		document.getElementById("Clock").firstChild.nodeValue = currentTime;
+	}
+</script>
+
+</head>
+
+<body onload="updateClock(); setInterval('updateClock()', 1000)">
+
+<header>
+<h1><img src="KiwanisLogo.jpg" alt="Kiwanis Club Bradford Chapter"/></h1>
+
+</header>
+		<p><span class="displayClock">
+		Local Time: <span id="Clock">Clock</span>
+	</span>
+</p>
+
+<nav class="horizontal">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="membership.html">Membership</a></li>
+		<li><a href="kiwanisprojects.html">Kiwanis Projects</a></li>
+		<li><a href="kiwanisfamily.html">Kiwanis Family</a></li>
+		<li><a href="committees.html">Committees</a></li>
+		<li><a href="contactus.html">Contact Us</a></li>	
+	</ul>
+</nav>
+
+<br/>
+
+<h2>Kiwanis/ARG Tree Farm</h2>
+<div id="kiwanistreefarm">
+
+<section>
+<p>The Kiwanis/ARG Tree Farm is a project that utilizes a 169 acre tract of land to generate revenue to benefit local health
+care. Since its inception almost fifty years ago, it has enabled to Kiwanis Club to donate over $500,000 to Bradford Regional
+Medical Center. Contributions have helped to improve pediatric and maternal care, purchase X-ray equipement, and provide startup
+money for the Upbeat and Cardiac Care programs.</p>
+<br/>
+
+<center><figure id="picturebank">
+<div>
+		<img alt="" src="treefarmprime1.png" height="200" width="300"/> 
+		<img alt="" src="treefarmprime2.png" id="photo2" height="200" width="300" />
+		<img alt="" src="treefarmprime3.png" id="photo3" height="200" width="300" /> 
+		<img alt="" src="treefarmprime4.png" height="200" width="300" />
+		<img alt="" src="treefarmprime5.png" id="photo5" height="200" width="300" />
+		<img alt="" src="treefarmprime6.png" height="200" width="300" />
+ </div>
+</figure></center>
+<br/>
+</section>
+
+
+<aside>
+<h1>Community Service</h1>
+<p>Whether it's helping an elderly home-owner with house repairs at Christmas in April, assisting with children's programs
+at the library, or serving meals to the needy at the Friendship Table, the Bradford Kiwanis Club is active throughout the 
+community.</p> <p>Emphasis on children and youth is reflected in many of the Bradford Kiwanis Club's annual Christmas
+Party for the Children at Beacon Light Behavioral Health Systems is a tradition that dates from the founding of the club in
+1936. Kiwanis sponsorship of the Key Club at Bradford Area High School dates from 1948. </p><br/> <p>Community service extends across
+a broad range of needs. You'll find Kiwanians delivering flowers during the American Cancer Society's Daffodil Days, ringing
+the bell at the Salvation Army Christmas kettles, volunteering at Special Olympics events, and serving meals at 
+	the Friendship
+	table.The Kiwanis Club often lends a hand to help stage civic events, improve parks and playgrounds, and provide volunteers at
+countless projects.</p>
+
+<center><video controls="controls" width="500">
+	<source src="communityservice.mp4"/>
+	<source src="communityservice.webm">
+</video>
+<p id="p">Judge Dominic Cercone reads to children at the Care for Children Reading event.</p></center>
+
+</aside>
+
+<aside>
+<h1>Kiwanis Kapers</h1>
+
+<p>The Kiwanis Club of Bradford is proud of its tradition of combining fun with community
+ service.  This is evident in the “Kiwanis Kapers,” the club’s annual variety show 
+ fundraiser, which turns 56 this year!
+</p><br/>
+
+<p> Every year since 1957, members of the club have organized a stage show using local 
+amateur talent.  Kiwanians participate on-stage as well as behind the scenes in the club’s 
+only fundraiser. </p> <br/>
+
+<p> Over the years, the show has taken many different forms, from musical stage shows to 
+variety.  Themes have ranged from Broadway to mystery to parodies of popular entertainment.
+Whatever the format, Kiwanis Kapers is a much anticipated local tradition with emphasis on
+family entertainment.</p><br/>
+
+<p> Kapers is a lot of fun, not just for our club, but for the entire community. 
+We are able to showcase all kinds of wonderful talent and provide an enjoyable 
+evening of live entertainment.</p><br/>
+
+<p> Kapers always has strong support from the community, especially patrons and program 
+advertisers, who ensure that our show will be a financial success. </p><br/>
+
+<p>The Bradford Kiwanis Club is know throughout the state for its "Kapers"
+production with fellow Kiwanians traveling to enjoy the show. In fact, the
+"Kapers" production is often the topic of discussion at the Kiwanis Mid-Winter
+and Summer Conferences</p><br/>
+
+<p> Last year’s show, “Working 9 to 5,” featured vocal groups, jazzy dance numbers, 
+singers, a children’s number, high school percussion composition, University of Pittsburgh at Bradford
+Improvers, and comedy which had the audience roaring with approval. Proceeds from Kiwanis Kapers are used to 
+support a wide range of charitable causes, with special emphasis on children’s programs.</p><br/>
+
+<p> Plans are well underway for the 50th anniversary show, which will feature highlights from
+past years, along with exciting new material.  Why not plan a trip to Bradford, PA, November 9,
+10, and 11 to be part of a Kiwanis tradition that has spanned 56 years!
+</p>
+
+</aside>
+
+
+
+
+</div>
+</body>
+
+<footer>
+	<p>
+		&copy;Kiwanis Club of Bradford, PA All rights reserved. Website development by Josiah Bennett and Dominika Urban	</p>
+</footer>
+
+</html>

@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<center><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Kiwanis Club Bradford Chapter</title>
+<link href="Kiwanis_styles.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript">
+	function updateClock()
+	{
+		var currentTime = new Date();
+		var currentHours = currentTime.getHours();
+		var currentMinutes = currentTime.getMinutes();
+		var currentSeconds = currentTime.getSeconds();
+		var timeOfDay = "";
+		
+		//determine timeOfDay:am or pm
+		timeOfDay = (currentHours < 12)?"AM":"PM";
+		//Convert an hour's value to "0" to "12"
+		currentHours = (currentHours > 12)?currentHours - 12:currentHours;
+		//Pad a leading zero for minutes less than 10
+		currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+		currentSeconds = (currentSeconds <10 ? "0" : "") + currentSeconds;
+		
+		currentTime = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+		
+		document.getElementById("Clock").firstChild.nodeValue = currentTime;
+	}
+</script>
+<style type="text/css">
+.auto-style1 {
+	border-width: 0px;
+}
+</style>
+</head></center>
+<header>
+<h1><img src="KiwanisLogo.jpg" alt="Kiwanis Club Bradford Chapter"/></h1>
+
+</header>
+<p><span class="displayClock">
+		Local Time: <span id="Clock">Clock</span>
+	</span></p>
+
+<center><nav class="horizontal">
+	<ul>
+		
+		<li><a href="index.html">Home</a></li>
+		<li><a href="membership.html">Membership</a></li>
+		<li><a href="kiwanisprojects.html">Kiwanis Projects</a></li>
+		<li><a href="kiwanisfamily.html">Kiwanis Family</a></li>
+		<li><a href="committees.html">Committees</a></li>
+		<li><a href="contactus.html">Contact Us</a></li>	
+	</ul>
+</nav></center>
+
+<center><div id="BodyDiv">
+<body onload="updateClock(); setInterval('updateClock()', 1000)">
+
+
+
+	<header>
+		<br/>
+		<h2>Welcome to the Kiwanis Club of Bradford, Pennsylvania Website!</h2>
+		<br/>
+	</header>
+	
+
+	<center>
+	<iframe name="slide" width="500" height="500" src="KeyClub1.png" frameborder="0" scrolling="no" marginheight="0"marginwidth="0">
+   <img src="KeyClub1.png" height="260"/>
+   </iframe>
+<center><table class="thumbnails">
+		<col class="PictureCols"/>
+
+	<tr>
+		<td><a href="KeyClub1.png" target="slide">
+		<img id="clickimage"src="KeyClub1_thumb.png" /></a></td>
+		<td><a href="KiwanisKapers1.png" target="slide">
+		<img id="clickimage"src="KiwanisKapers1_thumb.png"/></a></td>
+		<td><a href="KiwanisKapers2.png" target="slide">
+		<img id="clickimage"src="KiwanisKapers2_thumb.png"/></a></td>
+		<td><a href="KiwanisKapers3.png" target="slide">
+		<img id="clickimage"src="KiwanisKapers3_thumb.png"/></a></td>
+		<td><a href="TreeFarmSign1.png" target="slide">
+		<img id="clickimage"src="TreeFarmSign_thumb.png"/></a></td>
+	</tr>
+
+	</table>
+		</center>
+			</center>
+	
+
+		<br/>
+		<br/>
+		<div id="video">
+	<h2>Why be a part of Kiwanis?</h2>
+	<center><video controls width="320">
+	<source src="KiwanisRecruitingVideo.mp4"/>
+	<source src="KiwanisRecruitingVideo.webm"/>
+
+</video></center>
+</div>
+	<center><footer>
+	<p>
+	
+		&copy;Kiwanis Club of Bradford, PA All rights reserved. Website development by Josiah Bennett and Dominika Urban Last Updated:9/2/2014
+		
+	</p>
+</footer></center>
+
+</body>
+</div></center>
+	
+</html>

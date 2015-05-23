@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Membership</title>
+<link href="Kiwanis_styles.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript">
+	function updateClock()
+	{
+		var currentTime = new Date();
+		var currentHours = currentTime.getHours();
+		var currentMinutes = currentTime.getMinutes();
+		var currentSeconds = currentTime.getSeconds();
+		var timeOfDay = "";
+		
+		//determine timeOfDay:am or pm
+		timeOfDay = (currentHours < 12)?"AM":"PM";
+		//Convert an hour's value to "0" to "12"
+		currentHours = (currentHours > 12)?currentHours - 12:currentHours;
+		//Pad a leading zero for minutes less than 10
+		currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+		currentSeconds = (currentSeconds <10 ? "0" : "") + currentSeconds;
+		
+		currentTime = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+		
+		document.getElementById("Clock").firstChild.nodeValue = currentTime;
+	}
+</script>
+<style type="text/css">
+.auto-style1 {
+	border-width: 0px;
+}
+</style>
+
+</head>
+
+<body onload="updateClock(); setInterval('updateClock()', 1000)">
+
+<header>
+<h1><img src="KiwanisLogo.jpg" alt="Kiwanis Club Bradford Chapter"/></h1>
+
+</header>
+		<p><span class="displayClock">
+		Local Time: <span id="Clock">Clock</span>
+	</span>
+</p>
+
+<nav class="horizontal">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="membership.html">Membership</a></li>
+		<li><a href="kiwanisprojects.html">Kiwanis Projects</a></li>
+		<li><a href="kiwanisfamily.html">Kiwanis Family</a></li>
+		<li><a href="committees.html">Committees</a></li>
+		<li><a href="contactus.html">Contact Us</a></li>	
+	</ul>
+</nav>
+<br/>
+
+
+<div id="container">
+<h2>Membership Responsibilities</h2>
+<div id="membershipresponsibilities">
+
+<section>
+
+	<p><strong>Attendance:</strong>You are encouraged to attend each weekly
+	 meeting or to make up by attending a meeting of the Board, a Committee,
+	 another Kiwanis club, or the Key Club; attending a District or Division
+	 conference or convention; or participating in a service project. All will
+	 count for 100% attendance.</p>
+	 <br/>
+
+<p><strong>Good Standing:</strong>To maintain your status as an active
+	  member, you must meet the following minimum requirements:</p><br/>
+	  <ol>
+	  	<li>Attend two meetings each quarter. Make-ups as defined above may be counted.</li>
+	  	<br/><br/>
+	  	<li>Participate in one fundraising project during the year</li>
+	  	<br/><br/>
+	  	<li>Participate in one service project during the year. (In addition to any counted as attendance)</li>
+	  	<br/><br/>
+	  	<li>Pay your dues</li>
+	  	<br/><br/>
+	  	<li>Attend one interclub meeting during the year</li>
+	  </ol>
+	  <br/>
+	  
+	  <p><strong>Interclubs:</strong>These are visitations by four or more members of one club to the regular
+	   meeting of another. This is a great way to become better acquainted with our own club members as well as
+	   meet Kiwanians in other communities to gain more insights and new ideas.</p>
+	   <br/>
+	   <p><strong>Distinguised Kiwanian:</strong>You are encouraged to qualify for this Kiwanis International
+	    award presented by the District at the annual convention. Additional information available upon request.</p>
+	    <br/>
+	   <p><strong>Leave of Absence:</strong>You may be placed on leave of absence for reasons of health, business,
+	    or vacation for a period of one to six months in a year.</p>
+	    <br/>
+	 
+</section>
+<br/>
+</div>
+<br/>
+	<h2>Code of Ethics</h2>
+<div id="codeofethics">
+
+	<p>Kiwanis International, dedicated to the promotion of higher social, business, and professional standards, and
+	to the development, by precept and example, of a more intelligent, aggressive, and servicable citizenship,
+	recognizes the Golden Rule as a guide for everyday life.In application of its principles, it is my obligation:</p>
+	
+	
+	<ul>
+		<li>To recognize God as the Supreme Ruler and to abide by his immutable laws.</li>
+		<br/><br/>
+		<li>To endeavor to perfect myself in my chosen occupation, and to use it to the best of my ability to serve others.</li>
+		<br/><br/>
+		<li>To conduct my business or profession on a high ethical plane, so that others emulating my example will
+		help raise the standards of the vocation in which I am engaged.</li>
+		<br/><br/>
+		<li>To maintain the spirit of fairness in competition and help eradicate all forms of deception that violate the 
+		spirit of the law</li>
+		<br/><br/>
+		<li>To exert my influence to provide equal opportunity for the well-being of mankind.</li>
+		<br/><br/>
+		<li>To promote harmony in everyday contact, realizing that happiness is one of the major objectives of life, and that
+		happiness depends more on the way we meet the events of life than on the events themselves.</li>
+		<br/><br/>
+		<li>To improve relations between employer and employee, recognizing that tolerance, intelligence, and justice are the
+		common ground on which all disputes should be settled.</li>
+		<br/><br/>
+		<li>To exemplify good citizenship in appreciation of the fact that the strength of the nation depends upon the caliber
+		of its individual citizens.</li>
+	</ul>
+	</div>
+</div>
+
+	
+</body>
+
+<footer>
+	<p>
+		&copy;Kiwanis Club of Bradford, PA All rights reserved. Website development by Josiah Bennett and Dominika Urban
+	</p>
+</footer>
+
+</html>

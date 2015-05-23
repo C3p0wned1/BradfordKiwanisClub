@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Committees</title>
+<link href="Kiwanis_styles.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript">
+	function updateClock()
+	{
+		var currentTime = new Date();
+		var currentHours = currentTime.getHours();
+		var currentMinutes = currentTime.getMinutes();
+		var currentSeconds = currentTime.getSeconds();
+		var timeOfDay = "";
+		
+		//determine timeOfDay:am or pm
+		timeOfDay = (currentHours < 12)?"AM":"PM";
+		//Convert an hour's value to "0" to "12"
+		currentHours = (currentHours > 12)?currentHours - 12:currentHours;
+		//Pad a leading zero for minutes less than 10
+		currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+		currentSeconds = (currentSeconds <10 ? "0" : "") + currentSeconds;
+		
+		currentTime = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+		
+		document.getElementById("Clock").firstChild.nodeValue = currentTime;
+	}
+</script>
+
+</head>
+
+<body onload="updateClock(); setInterval('updateClock()', 1000)">
+
+<header>
+<h1><img src="KiwanisLogo.jpg" alt="Kiwanis Club Bradford Chapter"/></h1>
+
+</header>
+	<p>
+	<span class="displayClock">
+		Local Time: <span id="Clock">Clock</span>
+	</span>
+
+	</p>
+
+<nav class="horizontal">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="membership.html">Membership</a></li>
+		<li><a href="kiwanisprojects.html">Kiwanis Projects</a></li>
+		<li><a href="kiwanisfamily.html">Kiwanis Family</a></li>
+		<li><a href="committees.html">Committees</a></li>
+		<li><a href="contactus.html">Contact Us</a></li>	
+	</ul>
+</nav>
+<br/>
+<h2>Committees</h2>
+<br/>
+
+<center><table class="committees">
+		<thead>
+			<tr>
+				<th>Committee </th>
+				<th width="150px" >Committee Chair </th>
+				<th width="500px" >Committee Description</th>
+
+			</tr>
+		</thead>
+		<tr>
+			<td><b>Club Administration</b></td>
+			<td>Candy Tingley</td>
+			<td>This committee will provide the most effective club metting possible for each week of the administrative year.</td>
+		</tr>
+		<tr>
+			<td><b>Community & Youth Services</b></td>
+			<td>Bill Walb</td>
+			<td>This committee should implement projects on the arts, business affairs, citizenship, civip improvement, community beautification, conservation, health, international understanding, literacy, public affairs, safety, or help for senior
+			citizens and disabled persons. Projects can include, but are certainly not limited to, Special Olympics, Meals on Wheels, issues forums, youth exchange, Friendship Table, Salvation Army Kettle Drive, Daffodil Days and Crook Farm breakfast.</td>
+		</tr>
+		<tr>
+			<td><b>Finance & Fundraising</b></td>
+			<td>Al Vanderpoel</td>
+			<td>This committee develops - with cooperation of all club committees and the board - a budget for the club's administrative and project funds to be approved by the board at the beginning of each administrative year. To facilitate the project
+			fund, the committee develops and administers the needed fund-raising project(s) with which the club funds its service initiatives. Fund-raising should include both established or traditional projects of the club as well as consideration of new
+			fund raising efforts.</td>
+		</tr>
+		<tr>
+			<td><b>Membership Growth & Education</b></td>
+			<td>Shane Oschman</td>
+			<td>This committee will devise ways and means of maintaining an adequate membership. The committee will consider all proposals for membership and will submit its recommendations to the Board of Directors. The committee will also devise effective
+			plans for the orientation and induction of new members and the utilization of all members. The committee will also promote the concept of regular attendance at club meetings.</td>
+		</tr>
+		<tr>
+			<td><b>Sponsored Youth</b></td>
+			<td>Kathy Durner</td>
+			<td>This committee will encourage and promote the activities of the Key Club. It will act as a liaison with the school administration and provide counseling and experience to provide sponsored club members with citizenship and leadership training</td>
+		</tr>
+		<tr>
+			<td><b>Aktion Club/Builder's Club</b></td>
+			<td>Paula Vecellio</td>
+			<td>This committee will encourage and promote activites of Aktion Club and Builder's Club.  The Committee will act as a liaison with the special needs adult community and middle school club members. The committee will provide guidance and experience 
+			in the areas of citizenship and leadership</td>
+		
+		</tr>
+		<tr>
+			<td><b>Young Children: Priority One</b></td>
+			<td>Denise Bean</td>
+			<td>This committee will study, devise and suggest methods and means to implement the current Major Emphasis Program of Kiwanis International to address the needs of children prenatal through age five.</td>
+		</tr>
+			<tr>
+			<td><b>Kiwanis/ARG Tree Farm</b></td>
+			<td>Randy Durner/Russell Teague</td>
+			<td>The Kiwanis/ARG Tree Farm was established in 1954 with an agreement with Kendall Refinery(forerunner of ARG). The 99-year agreement calls for good forest management of the farm for the purpose of periodic sale of timber.<br/>
+			The proceeds of any sale are shared with ARG with 60% going to the Kiwanis Memorial Fund and 40% going to ARG.</td>
+		</tr>
+
+		<tr>
+			<td><b>Kiwanis Memorial Fund</b></td>
+			<td>Kiwanis Trustees</td>
+			<td>The Kiwanis Memorial Fund was established as a trust in 1950 to aid Bradford Regional Medical Center. The principal source of funds for the trust is from sales of timber on the Kiwanis/ARG Tree Farm, although funds may also be recieved from<br/>
+			other sources.</td>
+		</tr>
+		<tr>
+			<td><b>Kiwanis Kapers</b></td>
+			<td>Michelle McCann</td>
+			<td>Since 1957, the Kiwanis Kapers production has been the means by which we were able to carry out our community service projects. It is the club's only fundraiser throughout the year. We look forward to another successful Kiwanis Kapers this<br/>
+			year with the hard work of the Kapers Committee and all Kiwanians who participate in the planning or actual production too numerous to mention. This being the only fundraiser throughout the ear, <b>all Kiwanians are members of this committee.</b></td>
+		</tr>
+
+	</table></center>
+
+
+</body>
+
+<footer>
+	<p>&copy;Kiwanis Club of Bradford, PA All rights reserved. Website development by Josiah Bennett and Dominika Urban</p>		
+</footer>
+
+</html>

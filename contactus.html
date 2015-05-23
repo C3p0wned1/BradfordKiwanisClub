@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Contact Us</title>
+<link href="Kiwanis_styles.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript">
+	function updateClock()
+	{
+		var currentTime = new Date();
+		var currentHours = currentTime.getHours();
+		var currentMinutes = currentTime.getMinutes();
+		var currentSeconds = currentTime.getSeconds();
+		var timeOfDay = "";
+		
+		//determine timeOfDay:am or pm
+		timeOfDay = (currentHours < 12)?"AM":"PM";
+		//Convert an hour's value to "0" to "12"
+		currentHours = (currentHours > 12)?currentHours - 12:currentHours;
+		//Pad a leading zero for minutes less than 10
+		currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+		currentSeconds = (currentSeconds <10 ? "0" : "") + currentSeconds;
+		
+		currentTime = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+		
+		document.getElementById("Clock").firstChild.nodeValue = currentTime;
+	}
+</script>
+
+</head>
+
+<body onload="updateClock(); setInterval('updateClock()', 1000)">
+
+<header>
+<h1><img src="KiwanisLogo.jpg" alt="Kiwanis Club Bradford Chapter"/></h1>
+
+</header>
+	<p>
+	<span class="displayClock">
+		Local Time: <span id="Clock">Clock</span>
+	</span>
+
+	</p>
+
+<nav class="horizontal">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="membership.html">Membership</a></li>
+		<li><a href="kiwanisprojects.html">Kiwanis Projects</a></li>
+		<li><a href="kiwanisfamily.html">Kiwanis Family</a></li>
+		<li><a href="committees.html">Committees</a></li>
+		<li><a href="contactus.html">Contact Us</a></li>	
+	</ul>
+</nav>
+	<br/>
+	<h2>Contact Us</h2>
+
+	
+<article id="contactusarticle">
+<h3>How To Become a Kiwanis Member</h3>
+
+<p>The Kiwanis Club of Bradford is proud to be a vital part of the Bradford community. New
+members are welcome. Talk to any member to learn more about Kiwanis or to attend one of our
+meetings. You may also contact us at the address or phone numbers below:</p>
+<br/>
+
+<ul>
+	<li>Kiwanis Club of Bradford</li>
+	<li>P.O. Box 183</li>
+	<li>Bradford, PA 16701</li>
+</ul>
+<br/><br/>
+</article>
+
+	
+<h2>Contact Information</h2>	
+	<table class="contactus">
+		<thead>
+			<tr>
+				<th >Name </th>
+				<th width="90px" >Position </th>
+				<th width="90px" >Email/Phone </th>
+
+			</tr>
+		</thead>
+		<tr>
+			<td>Tom Bowes</td>
+			<td>President</td>
+			<td>(814)368-7096</td>
+		</tr>
+		<tr>
+			<td>Kathy Durner</td>
+			<td>President Elect</td>
+			<td>(814)362-7733</td>
+		</tr>
+		<tr>
+			<td>Ronald Yeager</td>
+			<td>Secretary</td>
+			<td>(814)362-4471</td>
+		</tr>
+		<tr>
+			<td>Allan Vanderpool</td>
+			<td>Treasurer</td>
+			<td>(814)362-4778</td>
+		</tr>
+	</table>
+
+
+<br/>
+<footer>
+	<p>
+		&copy;Kiwanis Club of Bradford, PA All rights reserved. Website development by Josiah Bennett and Dominika Urban</p>
+</footer>
+
+</body>
+
+</html>
